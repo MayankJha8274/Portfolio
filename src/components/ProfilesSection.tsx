@@ -164,8 +164,8 @@ const ProfilesSection = () => {
           })}
         </div>
 
-        {/* Terminal Display */}
-        <div className="mt-12 glass-card p-1 rounded-2xl max-w-2xl mx-auto">
+        {/* Achievements Display */}
+        <div className="mt-12 glass-card p-1 rounded-2xl max-w-3xl mx-auto">
           <div className="terminal-window">
             <div className="terminal-header">
               <div className="terminal-dot bg-red-500" />
@@ -173,32 +173,54 @@ const ProfilesSection = () => {
               <div className="terminal-dot bg-green-500" />
               <span className="ml-2 text-xs text-muted-foreground font-mono">achievements.sh</span>
             </div>
-            <div className="p-6 space-y-2 font-mono text-sm">
+            <div className="p-6 space-y-4">
               <div className="flex items-center gap-2">
-                <span className="text-neon-green">$</span>
-                <span className="text-foreground">cat achievements.log</span>
+                <span className="text-neon-green font-mono">$</span>
+                <span className="text-foreground font-mono">cat achievements.log</span>
               </div>
-              <div className="text-muted-foreground mt-4">
-                <div className="flex justify-between py-1 border-b border-border/50">
-                  <span>LeetCode Problems</span>
-                  <span className="text-primary">500+</span>
+              <div className="space-y-4 mt-4">
+                {/* GDG Achievement */}
+                <div className="border border-border/50 rounded-lg p-4 hover:border-primary/50 transition-colors">
+                  <div className="flex items-start gap-3">
+                    <Trophy className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+                    <div className="flex-1">
+                      <h4 className="font-semibold text-foreground mb-1">
+                        🥈 2nd Position - DSA Contest
+                      </h4>
+                      <p className="text-sm text-muted-foreground mb-2">
+                        Data Structures and Algorithms contest organized by Google Developer Groups (GDG) Coderush at BPIT
+                      </p>
+                      <a
+                        href="https://drive.google.com/file/d/1HRb6iLe2gBTruYHD9bWI_Y850cFtD3iG/view?pli=1"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 text-sm text-primary hover:text-primary/80 transition-colors group"
+                      >
+                        <span>View Certificate</span>
+                        <ExternalLink className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                      </a>
+                    </div>
+                  </div>
                 </div>
-                <div className="flex justify-between py-1 border-b border-border/50">
-                  <span>GeeksforGeeks</span>
-                  <span className="text-secondary">200+</span>
-                </div>
-                <div className="flex justify-between py-1 border-b border-border/50">
-                  <span>Coding Ninjas</span>
-                  <span className="text-neon-green">100+</span>
-                </div>
-                <div className="flex justify-between py-1 font-semibold text-foreground">
-                  <span>Total</span>
-                  <span className="gradient-text">800+</span>
+                
+                {/* LeetCode Achievement */}
+                <div className="border border-border/50 rounded-lg p-4 hover:border-secondary/50 transition-colors">
+                  <div className="flex items-start gap-3">
+                    <Code2 className="w-5 h-5 text-secondary flex-shrink-0 mt-1" />
+                    <div className="flex-1">
+                      <h4 className="font-semibold text-foreground mb-1">
+                        LeetCode Global Rating
+                      </h4>
+                      <p className="text-sm text-muted-foreground">
+                        Achieved a global rating of <span className="text-secondary font-semibold">1665</span> on LeetCode
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div className="flex items-center gap-2 mt-4">
-                <span className="text-neon-green">$</span>
-                <span className="text-foreground">_</span>
+                <span className="text-neon-green font-mono">$</span>
+                <span className="text-foreground font-mono">_</span>
                 <span className="w-2 h-4 bg-primary animate-pulse" />
               </div>
             </div>
