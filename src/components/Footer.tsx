@@ -11,19 +11,10 @@ const Footer = () => {
             <div className="w-8 h-8 rounded-lg bg-primary/10 border border-primary/30 flex items-center justify-center">
               <Terminal className="w-4 h-4 text-primary" />
             </div>
-            <span className="font-display font-bold text-lg text-foreground">
-              MJ<span className="text-primary">.</span>
-            </span>
           </div>
 
-          <div className="flex items-center gap-1 text-sm text-muted-foreground font-mono">
-            <span>Built with</span>
-            <Heart className="w-4 h-4 text-red-500 fill-red-500 animate-pulse" />
-            <span>by Mayank Jha</span>
-          </div>
-
-          <div className="text-sm text-muted-foreground font-mono">
-            © {currentYear} All rights reserved.
+          <div className="text-sm text-muted-foreground font-mono text-center">
+            Thanks for visiting my portfolio.
           </div>
         </div>
       </div>

@@ -36,7 +36,7 @@ const Navbar = () => {
               <Terminal className="w-5 h-5 text-primary" />
             </div>
             <span className="font-display font-bold text-xl text-foreground">
-              MJ<span className="text-primary">.</span>
+              Mayank Jha
             </span>
           </a>
 
