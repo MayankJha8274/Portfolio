@@ -183,6 +183,19 @@
   to { opacity: 1; transform: translateY(0); }
 }
 
+/* Hide Lovable branding */
+iframe[src*="lovable"],
+[class*="lovable"],
+[id*="lovable"],
+div[style*="position: fixed"][style*="bottom"],
+div[style*="position: fixed"][style*="z-index: 9999"],
+button[style*="position: fixed"] {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
 /* Scrollbar styling */
 ::-webkit-scrollbar {
   width: 8px;
