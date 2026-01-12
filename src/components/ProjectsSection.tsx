@@ -6,7 +6,7 @@ const projects = [
     title: "FaceTrack Meet",
     description: "AI-powered video conferencing with real-time facial recognition attendance system.",
     longDescription: "Revolutionary video conferencing platform that solves manual attendance tracking. Features real-time peer-to-peer video calls using WebRTC and Socket.io, with automated facial recognition attendance powered by TensorFlow.js and face-api.",
-    tech: ["React", "Node.js", "WebRTC", "Socket.io", "TensorFlow.js", "face-api", "MongoDB Atlas"],
+    tech: ["React.js", "Node.js", "WebRTC", "Socket.io", "TensorFlow.js", "face-api", "MongoDB Atlas"],
     icon: Video,
     color: "neon-green",
     features: [

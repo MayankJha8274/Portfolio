@@ -5,7 +5,7 @@ const skillCategories = [
     title: "Frontend",
     icon: Layout,
     color: "primary",
-    skills: ["React.js", "HTML5", "CSS3", "Tailwind CSS", "JavaScript", "EJS"],
+    skills: ["React.js", "HTML5", "CSS3", "Tailwind CSS", "JavaScript"],
   },
   {
     title: "Backend",
@@ -17,7 +17,7 @@ const skillCategories = [
     title: "Databases",
     icon: Database,
     color: "neon-green",
-    skills: ["MongoDB", "MongoDB Atlas", "SQL", "Mongoose"],
+    skills: ["MongoDB", "SQL"],
   },
   {
     title: "DSA & Problem Solving",
